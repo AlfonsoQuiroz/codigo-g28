@@ -1,0 +1,95 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    /* centrar el contenido vertical y horizontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:first-child {
+    color: #fff;
+}
+
+section:first-child>h1 {
+    font-size: 42px;
+    width: 20ch;
+}
+
+section:first-child>p {
+    width: 50ch;
+    margin-top: 30px;
+}
+
+section:last-child>form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    color: #fff;
+    text-align: center;
+    /* esta propiedad remueve el subrayado del a */
+    text-decoration: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    display: block;
+}
+
+section:last-child>form {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 35px;
+    border-radius: 8px;
+}
+
+section:last-child>a:first-child {
+    background-color: hsl(248, 32%, 49%);
+}
+
+section:last-child>form>button {
+    background-color: hsl(154, 59%, 51%);
+    /* transforma el texto a mayuscula */
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    /* cambia el peso de la fuenta a negrita bold = negrita */
+    /* font-weight: bold; */
+}
+
+input {
+    padding: 18px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 6px;
+    border: solid 1px hsl(249, 10%, 26%);
+}
+
+section:last-child>form>p {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    color: hsl(0, 3%, 77%);
+    /* cambia el peso de la fuenta a negrita bold = negrita */
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.terminos {
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    margin-left: 5px;
+}
