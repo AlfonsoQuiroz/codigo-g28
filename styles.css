@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    /* Scroll horizontal hidden: oculto */
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu>div>img {
+    width: 200px;
+}
+
+.menu>ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu>ul>li>a {
+    color: #fff;
+}
+
+.menu>ul>li>a:hover {
+    background-color: #fd6f00;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile {
+    border-radius: 50%;
+    border: solid 2px #fd6f00;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: #fff;
+}
+
+.profile>img {
+    overflow: hidden;
+    position: absolute;
+    top: -90px;
+    left: -45px;
+    object-fit:cover;
+}
+
+.social-media {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gretting {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.full-name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fd6f00;
+}
+
+.title {
+    font-size: 52px;
+}
+
+.description {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    font-family: "Poppins", sans-serif;
+    background-color: #fd6f00;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+/* Crear una condición para aplicar estilos en desktop */
+/* media son funciones de CSS que permiten modificar los estilos
+en base a una medida */
+
+/* Desktop - Large devices */
+@media (min-width: 1025px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px;
+    }
+
+    .menu>ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 72px;
+        width: 20ch;
+    }
+
+    .description {
+        width: 50ch;
+        margin-top: 30px;
+    }
+}
