@@ -1,221 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <!-- Menu de navegación header -->
-    <header>
-      <!-- navegacion -->
-      <nav class="menu">
-        <!-- Logo - enlace -->
-        <div>
-          <img src="./assets/icons/logo.svg" alt="Logo de portafolio" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <!-- Menu de navegación header -->
+  <header>
+    <!-- navegacion -->
+    <nav class="menu">
+      <!-- Logo - enlace -->
+      <div>
+        <img src="./assets/icons/logo.svg" alt="Logo de portafolio" />
+      </div>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About me</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Testimonials</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <!-- Listado de items (home, about) -->
+    </nav>
+  </header>
+  <!-- La seccion principal -->
+  <main>
+    <section class="container container-reverse">
+      <section>
+        <p class="gretting">Hi I am</p>
+        <p class="full-name">Alfonso Quiroz</p>
+        <h1 class="title">Senior Software Developer</h1>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+          nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
+          tempus pharetra
+        </p>
+        <button class="btn-primary">Hire me</button>
+      </section>
+      <section>
+        <div class="profile">
+          <img src="./assets/images/Foto-Alfonso_TECSUP-removebg-preview.png" alt="Foto de Perfil Alfonso Quiroz"
+            width="350px" height="350px" />
         </div>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About me</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Testimonials</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <!-- Listado de items (home, about) -->
-      </nav>
-    </header>
-    <!-- La seccion principal -->
-    <main>
-      <section class="container container-reverse">
-        <section>
-          <p class="gretting">Hi I am</p>
-          <p class="full-name">Alfonso Quiroz</p>
-          <h1 class="title">Senior Software Developer</h1>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-            nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
-            tempus pharetra
-          </p>
-          <button class="btn-primary">Hire me</button>
-        </section>
-        <section>
-          <div class="profile">
+        <div class="social-media">
+          <a href="#">
+            <img src="./assets/icons/facebook.svg" alt="" width="32" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons/twitter.svg" alt="" width="32" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons/instagram.svg" alt="" width="32" />
+          </a>
+          <a href="#">
+            <img src="./assets/icons/linkedin.svg" alt="" width="32" />
+          </a>
+        </div>
+      </section>
+    </section>
+    <section class="container container-reverse">
+      <section>
+        <img src="./assets/images/4865996.jpg" width="350" alt="" />
+      </section>
+      <section class="about-container">
+        <h2 class="text-2xl">About me</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+          nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
+          tempus pharetra
+        </p>
+        <div class="progress-container">
+          <label for="">HTML</label>
+          <progress max="100" value="80"></progress>
+        </div>
+        <div class="progress-container">
+          <label for="">CSS</label>
+          <progress max="100" value="75"></progress>
+        </div>
+        <div class="progress-container">
+          <label for="">JavaScript</label>
+          <progress max="100" value="95"></progress>
+        </div>
+        <div class="progress-container">
+          <label for="">React</label>
+          <progress max="100" value="90"></progress>
+        </div>
+      </section>
+    </section>
+
+    <section class="container">
+      <div class="text-center">
+        <h2 class="text-2xl">Services</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+          nibh lectus netus in. Aliquet donec morbi convallis pretium
+        </p>
+      </div>
+</section>
+
+<section class="container">
+        <div class="container-card-services">
+          <div class="card-service">
             <img
-              src="./assets/images/Foto-Alfonso_TECSUP-removebg-preview.png"
-              alt="Foto de Perfil Alfonso Quiroz"
-              width="350px"
-              height="350px"
+              src="./assets/icons/folder.svg"
+              alt="Icono del servicio de UI/UX"
             />
+            <h3>UI/UX</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
           </div>
-          <div class="social-media">
-            <a href="#">
-              <img src="./assets/icons/facebook.svg" alt="" width="32" />
-            </a>
-            <a href="#">
-              <img src="./assets/icons/twitter.svg" alt="" width="32" />
-            </a>
-            <a href="#">
-              <img src="./assets/icons/instagram.svg" alt="" width="32" />
-            </a>
-            <a href="#">
-              <img src="./assets/icons/linkedin.svg" alt="" width="32" />
-            </a>
+          <div class="card-service">
+            <img
+              src="./assets/icons/pc.svg"
+              alt="Icono del servicio de UI/UX"
+            />
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
           </div>
-        </section>
-      </section>
-      <section class="container container-reverse">
-        <section>
-          <img src="./assets/images/4865996.jpg" width="350" alt="" />
-        </section>
-        <section class="about-container">
-          <h2 class="text-2xl">About me</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-            nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis
-            tempus pharetra
-          </p>
-          <div class="progress-container">
-            <label for="">HTML</label>
-            <progress max="100" value="80"></progress>
+          <div class="card-service">
+            <img
+              src="./assets/icons/phone.svg"
+              alt="Icono del servicio de UI/UX"
+            />
+            <h3>App Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
           </div>
-          <div class="progress-container">
-            <label for="">CSS</label>
-            <progress max="100" value="75"></progress>
+          <div class="card-service">
+            <img
+              src="./assets/icons/graphic.svg"
+              alt="Icono del servicio de UI/UX"
+            />
+            <h3>Graphic Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam
+              interdum
+            </p>
           </div>
-          <div class="progress-container">
-            <label for="">JavaScript</label>
-            <progress max="100" value="95"></progress>
-          </div>
-          <div class="progress-container">
-            <label for="">React</label>
-            <progress max="100" value="90"></progress>
-          </div>
-        </section>
-      </section>
-      <section class="container">
-        <div class="text-center">
-          <h2 class="text-2xl">My Projects</h2>
-          <p class="description">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
-            nibh lectus netus in. Aliquet donec morbi convallis pretium
-          </p>
-          <button class="btn-primary">Web Design</button>
         </div>
       </section>
-      <section class="container">
-        <!-- Grilla de proyectos -->
-        <div class="grid-projects">
-          <!-- Project card -->
-          <a class="card" href="/reto-1/reto-1.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p1.svg" alt="" />
-                <img src="./assets/projects/p1-2.svg" alt="" />
-              </div>
+
+    <section class="container">
+      <div class="text-center">
+        <h2 class="text-2xl">My Projects</h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+          nibh lectus netus in. Aliquet donec morbi convallis pretium
+        </p>
+        <button class="btn-primary">Web Design</button>
+      </div>
+    </section>
+    <section class="container">
+      <!-- Grilla de proyectos -->
+      <div class="grid-projects">
+        <!-- Project card -->
+        <a class="card" href="/reto-1/reto-1.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p1.svg" alt="" />
+              <img src="./assets/projects/p1-2.svg" alt="" />
             </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+        <!-- Segund element de grid -->
+        <a class="card" href="/reto-2/reto-2.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p2.svg" alt="" />
+              <img src="./assets/projects/p2-2.svg" alt="" />
             </div>
-          </a>
-          <!-- Segund element de grid -->
-          <a class="card" href="/reto-2/reto-2.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p2.svg" alt="" />
-                <img src="./assets/projects/p2-2.svg" alt="" />
-              </div>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+        <a class="card" href="/reto-1/reto-1.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p3.svg" alt="" />
+              <img src="./assets/projects/p3-2.svg" alt="" />
             </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+        <a class="card" href="/reto-1/reto-1.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p1.svg" alt="" />
+              <img src="./assets/projects/p1-2.svg" alt="" />
             </div>
-          </a>
-          <a class="card" href="/reto-1/reto-1.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p3.svg" alt="" />
-                <img src="./assets/projects/p3-2.svg" alt="" />
-              </div>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+        <!-- Segund element de grid -->
+        <a class="card" href="/reto-1/reto-1.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p2.svg" alt="" />
+              <img src="./assets/projects/p2-2.svg" alt="" />
             </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+        <a class="card" href="/reto-1/reto-1.html">
+          <!-- Imagenes -->
+          <div class="card-images">
+            <div>
+              <img src="./assets/projects/p3.svg" alt="" />
+              <img src="./assets/projects/p3-2.svg" alt="" />
             </div>
-          </a>
-          <a class="card" href="/reto-1/reto-1.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p1.svg" alt="" />
-                <img src="./assets/projects/p1-2.svg" alt="" />
-              </div>
-            </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
-            </div>
-          </a>
-          <!-- Segund element de grid -->
-          <a class="card" href="/reto-1/reto-1.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p2.svg" alt="" />
-                <img src="./assets/projects/p2-2.svg" alt="" />
-              </div>
-            </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
-            </div>
-          </a>
-          <a class="card" href="/reto-1/reto-1.html">
-            <!-- Imagenes -->
-            <div class="card-images">
-              <div>
-                <img src="./assets/projects/p3.svg" alt="" />
-                <img src="./assets/projects/p3-2.svg" alt="" />
-              </div>
-            </div>
-            <!-- Textos -->
-            <div class="card-body">
-              <p>Web Desing</p>
-              <h3>AirCalling Landing Page Design</h3>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-    <!-- Pie de pagina (footer) -->
-    <footer></footer>
-  </body>
+          </div>
+          <!-- Textos -->
+          <div class="card-body">
+            <p>Web Desing</p>
+            <h3>AirCalling Landing Page Design</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Pie de pagina (footer) -->
+  <footer></footer>
+</body>
+
 </html>

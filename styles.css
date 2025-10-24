@@ -25,11 +25,11 @@ a {
   gap: 25px;
 }
 
-.menu > div > img {
+.menu>div>img {
   width: 200px;
 }
 
-.menu > ul {
+.menu>ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -38,11 +38,11 @@ a {
   align-items: center;
 }
 
-.menu > ul > li > a {
+.menu>ul>li>a {
   color: #fff;
 }
 
-.menu > ul > li > a:hover {
+.menu>ul>li>a:hover {
   background-color: #fd6f00;
   padding: 6px;
   border-radius: 6px;
@@ -78,7 +78,7 @@ main {
   background-color: #fff;
 }
 
-.profile > img {
+.profile>img {
   overflow: hidden;
   position: absolute;
   top: -100px;
@@ -136,20 +136,50 @@ main {
   margin-bottom: 16px;
 }
 
-.progress-container > progress {
+.progress-container>progress {
   width: 100%;
   border-radius: 6px;
   height: 12px;
 }
 
-.progress-container > progress::-webkit-progress-bar {
+.progress-container>progress::-webkit-progress-bar {
   background-color: #edecec;
   border-radius: 6px;
 }
 
-.progress-container > progress::-webkit-progress-value {
+.progress-container>progress::-webkit-progress-value {
   background-color: #fd6f00;
   border-radius: 6px;
+}
+
+.container-card-services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-service {
+  background-color: #f8f8f8;
+  color: #000;
+  padding: 18px;
+  border-radius: 14px;
+  width: 330px;
+}
+
+.card-service>img {
+  padding-top: 36px;
+
+}
+
+.card-service>h3 {
+  padding-top: 10px;
+}
+
+.card-service>p {
+  padding-top: 10px;
+  padding-bottom: 36px;
 }
 
 .grid-projects {
@@ -170,17 +200,17 @@ main {
   text-align: right;
 }
 
-.card-images > div > img {
+.card-images>div>img {
   width: 274px;
 }
 
-.card-images > div > img:first-child {
+.card-images>div>img:first-child {
   position: absolute;
   bottom: -3px;
   right: 115px;
 }
 
-.card-images > div > img:last-child {
+.card-images>div>img:last-child {
   padding-right: 40px;
   height: 489px;
   object-fit: cover;
@@ -190,7 +220,7 @@ main {
   margin-top: 30px;
 }
 
-.card-body > p {
+.card-body>p {
   color: #fd6f00;
   margin-bottom: 15px;
 }
@@ -207,7 +237,7 @@ en base a una medida */
     padding: 60px;
   }
 
-  .menu > ul {
+  .menu>ul {
     flex-direction: row;
     gap: 40px;
   }
@@ -241,11 +271,11 @@ en base a una medida */
     /* margin: auto; */
   }
 
-  .container > section:first-child {
+  .container>section:first-child {
     flex-grow: 1;
   }
 
-  .container > section:last-child {
+  .container>section:last-child {
     flex-grow: 1;
   }
 
@@ -257,6 +287,10 @@ en base a una medida */
   .description {
     width: 50ch;
     margin-top: 30px;
+  }
+
+  .container-card-services {
+    flex-direction: row;
   }
 
   .grid-projects {
