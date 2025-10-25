@@ -27,6 +27,10 @@ header > nav {
   padding: 30px;
 }
 
+.menu {
+  display: none;
+}
+
 .menu-burguer {
   background-color: transparent;
   border: none;
@@ -101,7 +105,16 @@ h1 {
   gap: 50px;
 }
 
-.container-intro > p {
+.container-intro > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-intro > div > p {
   color: #c9c9c9;
   line-height: 2;
   width: 30ch;
@@ -165,6 +178,10 @@ h1 {
   background-image: url(./images/mobile/image-fisheye.jpg);
 }
 
+.hidden-m {
+  display: none;
+}
+
 .container-button {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -217,4 +234,127 @@ footer {
 
 .footer-text {
   text-align: center;
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  header {
+    background-image: url(./images/desktop/image-hero.jpg);
+  }
+
+  .container-width {
+    width: 1440px;
+    margin: auto;
+    padding: 100px 160px;
+  }
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+
+  .container-btn-burguer {
+    display: none;
+  }
+
+  header > div > div {
+    width: 45%;
+  }
+
+  h1 {
+    font-size: 62px;
+    padding: 20px;
+    width: 15ch;
+  }
+
+  .container-intro {
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .container-intro > picture > img {
+    width: 730px;
+    object-fit: cover;
+  }
+
+  .container-intro > div {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    left: 570px;
+    top: 245px;
+    text-align: left;
+    width: auto;
+    padding: 60px;
+  }
+
+  .text-2xl {
+    width: 20ch;
+    text-align: left;
+  }
+
+  .container-intro > div > p {
+    width: 50ch;
+  }
+
+  .container-creations {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 450px);
+  }
+
+  .creation {
+    height: 450px;
+  }
+
+  .creation-1 {
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+  }
+
+  .creation-2 {
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+  }
+
+  .creation-3 {
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+  }
+
+  .creation-4 {
+    background-image: url(./images/desktop/image-grid.jpg);
+  }
+
+  .creation-5 {
+    background-image: url(./images/desktop/image-from-above.jpg);
+  }
+
+  .creation-6 {
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+  }
+
+  .creation-7 {
+    background-image: url(./images/desktop/image-curiosity.jpg);
+  }
+
+  .creation-8 {
+    background-image: url(./images/desktop/image-fisheye.jpg);
+  }
+
+  .container-creation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hidden-m {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
 }
