@@ -3,7 +3,7 @@
  * - products
  * - users
  */
-const BASE_URL = "https://693b88c69b80ba7262cd8e30.mockapi.io";
+const BASE_URL = "https://693b89e69b80ba7262cd92f1.mockapi.io";
 
 /**
  try {
