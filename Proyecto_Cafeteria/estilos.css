@@ -1,0 +1,649 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #F5F5F5;
+  color: #583B1C;
+  /* scroll horizontal hidden: oculto */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.portada {
+  /* width: 100%; */
+  height: 100%;
+  background-image: url(./assets/images/Inicio/cafe_portada.png);
+  background-size: cover;
+  /* Escala proporcional sin deformarse */
+  background-position: center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+}
+
+
+
+.menu {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu>div>img {
+  width: 200px;
+}
+
+
+.menu>ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu>ul>li>a {
+  color: #fff;
+}
+
+.menu>ul>li>a:hover {
+  background-color: #FFB2D3;
+  color: #583B1C;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+main {
+  margin-top: 40px;
+}
+
+.p-0 {
+  color: #583B1C;
+  padding: 0 !important;
+}
+
+.rectangulo {
+  background-color: #E2D9C8;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangulo-iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  padding: 30px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+  width: 180px;
+}
+
+.iconos>img {
+  height: 61px;
+  width: 61px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: flex-end
+}
+
+.iconos>h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #583B1C
+}
+
+.container2 {
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  padding-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+}
+
+.container-reverse {
+  flex-direction: column-reverse;
+}
+
+
+.container1 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 240px;
+  padding-right: 240px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.container-inferior {
+  color: #583B1C;
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+}
+
+
+
+.text-center {
+  text-align: center;
+}
+
+
+
+.social-media {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  width: 250px;
+}
+
+.gretting {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.full-name {
+  font-weight: 600;
+  font-size: 24px;
+  color: #fd6f00;
+}
+
+.title {
+  font-size: 52px;
+}
+
+.description {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  font-family: "Poppins", sans-serif;
+  background-color: #FFB2D3;
+  color: #583B1C;
+  border: none;
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 30px;
+}
+
+.text-2xl {
+  font-size: 32px;
+  /* margin-bottom: 20px; */
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.progress-container>progress {
+  width: 100%;
+  border-radius: 6px;
+  height: 12px;
+}
+
+.progress-container>progress::-webkit-progress-bar {
+  background-color: #edecec;
+  border-radius: 6px;
+}
+
+.progress-container>progress::-webkit-progress-value {
+  background-color: #fd6f00;
+  border-radius: 6px;
+}
+
+.container-card-pasteleria {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-pasteleria {
+  background-color: #f8f8f8;
+  color: #000;
+  padding: 18px;
+  border-radius: 14px;
+  width: 260px;
+}
+
+.card-pasteleria>img {
+  padding-top: 0px;
+  height: 40vh;
+}
+
+.card-pasteleria>h3 {
+  padding-top: 10px;
+}
+
+.card-pasteleria>p {
+  padding-top: 10px;
+  padding-bottom: 36px;
+}
+
+.grid-projects {
+  display: grid;
+  gap: 50px;
+}
+
+.card {
+  color: #fff;
+}
+
+.card-images {
+  background-color: #ffebdb;
+  border-radius: 6px;
+  position: relative;
+  width: 445px;
+  height: 489px;
+  text-align: right;
+}
+
+.card-images>div>img {
+  width: 274px;
+}
+
+.card-images>div>img:first-child {
+  position: absolute;
+  bottom: -3px;
+  right: 115px;
+}
+
+.card-images>div>img:last-child {
+  padding-right: 40px;
+  height: 489px;
+  object-fit: cover;
+}
+
+.card-body {
+  margin-top: 30px;
+}
+
+.card-body>p {
+  color: #fd6f00;
+  margin-bottom: 15px;
+}
+
+  .pie {
+    color: #583B1C;
+    /* width: 100%; */
+    height: 40vh;
+    background-image: url(./assets/images/Seccion_Inferior/Cafeteria1/image\ 8.png);
+    background-size: cover;
+    /* Escala proporcional sin deformarse */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+  }
+
+
+.menu1 {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* .menu1 {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+} */
+
+/* .menu1>ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.menu1>ul>li>a {
+  color: #583B1C;
+}
+
+.menu1>ul>li>a:hover {
+  background-color: #FFB2D3;
+  color: #583B1C;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+
+footer {
+  margin-top: 50px;
+}
+
+.container-footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 26px;
+}
+
+.container-footer>p {
+  color: #fff
+}
+
+.container-footer>p>span {
+  color: #FFB2D3
+}
+
+
+/********************************************************************************************/
+
+/* Crear una condicion para aplicar estilos en desktop */
+/* @media son funciones de CSS que permiten modificar los estilos
+en base a una medida */
+
+
+/* Desktop - Large devices */
+@media (min-width: 1025px) {
+
+  .menu>div>img {
+    height: 61px;
+  }
+
+
+  .menu {
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 240px;
+    padding-right: 240px;
+    /* background-image: url(./assets/images/Inicio/cafe_portada.png); */
+  }
+
+  .menu>ul {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .portada {
+    /* width: 100%; */
+    height: 100%;
+    background-image: url(./assets/images/Inicio/cafe_portada.png);
+    background-size: cover;
+    /* Escala proporcional sin deformarse */
+    background-position: bottom right;
+    /* Coloca la imagen abajo y hacia la derecha */
+    background-repeat: no-repeat;
+  }
+
+
+  main {
+    max-width: 2200px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .container {
+    /* cambiar la orientación a horizontal */
+    flex-direction: row;
+
+    /*
+    propiedad: justify-content: manipula los elementos en el eje x (horizontal)
+    valor: space-between: acomoda los elementos de extremo a extremo
+    |---------------------|
+    | 1                 2 |
+    | 1        2        3 |
+    |---------------------|
+    */
+    /* justify-content: space-between; */
+    /* Definir el ancho maximo de un elemento
+    60% de la pantalla
+    Ejemplo:
+    monitor: 1000px
+    max-width: 600px
+     */
+    /* max-width: 60%; */
+    /* el margin auto sirve para poder centrar el contenido horizontal
+    solomanete si hemos manipulado el ancho del element */
+    /* margin: auto; */
+  }
+
+  .container>section:first-child {
+    flex-grow: 1;
+  }
+
+  .container>section:last-child {
+    flex-grow: 1;
+  }
+
+  .title {
+    font-size: 42px;
+    width: 20ch;
+  }
+
+  .description {
+    width: 50ch;
+    margin-top: 30px;
+  }
+
+  .container-card-pasteleria {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .card-pasteleria {
+    background-color: #E2D9C8;
+    color: #583B1C;
+    padding: 18px;
+    border-radius: 14px;
+    width: 260px;
+  }
+
+  .card-pasteleria>img {
+    padding-top: 0px;
+    height: 35vh;
+    border-radius: 18px;
+    width: 100%;
+  }
+
+
+  .card-pasteleria>h3 {
+    padding-top: 10px;
+  }
+
+  .card-pasteleria>p {
+    padding-top: 10px;
+    padding-bottom: 36px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .container1 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 122px;
+    padding-left: 240px;
+    padding-right: 240px;
+    justify-content: flex-start;
+    gap: 25px;
+
+  }
+
+  .container2 {
+
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    /* padding-bottom: 0px; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+  }
+
+  .text-2xl {
+    font-size: 32px;
+    /* margin-bottom: 20px; */
+  }
+
+  .container {
+
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+  }
+
+  .pie {
+    color: #583B1C;
+    /* width: 100%; */
+    height: 40vh;
+    background-image: url(./assets/images/Seccion_Inferior/Cafeteria1/image\ 8.png);
+    background-size: cover;
+    /* Escala proporcional sin deformarse */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+  }
+
+
+  .container-inferior {
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+  }
+
+  .container-inferior>a {
+    color: #583B1C;
+  }
+
+  .menu1 {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .menu1>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu1>ul>li>a {
+    color: #583B1C;
+  }
+
+  .menu1>ul>li>a:hover {
+    background-color: #FFB2D3;
+    color: #583B1C;
+    padding: 6px;
+    border-radius: 6px;
+  }
+
+
+  .social-media {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 250px;
+  }
+
+
+  .container-footer {
+    background-color: #583B1C;
+    text-align: center;
+    padding: 26px;
+  }
+
+  .container-footer>p {
+    color: #fff
+  }
+
+  .container-footer>p>span {
+    color: #FFB2D3
+  }
+
+
+
+}
+
+.grid-projects {
+  /* 3 elementos filas */
+  grid-template-columns: repeat(3, 1fr);
+}
