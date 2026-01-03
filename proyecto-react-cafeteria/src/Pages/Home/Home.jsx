@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   SidebarInset,
   SidebarProvider,
@@ -5,8 +6,20 @@ import {
 } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 import { Separator } from "@/components/ui/separator";
+import { getProducts } from "@/services/api";
 
 function Home() {
+const [products, setProducts] = useState([]);
+
+const handleGetProducts = async () => {
+    const data = await getProducts();
+    setProducts(data);
+};
+
+useEffect (() => {
+    handleGetProducts();
+}, []);
+
   return (
     <div>
       <SidebarProvider>
@@ -21,6 +34,7 @@ function Home() {
           </header>
           <div className="flex flex-1 flex-col gap-4 p-4">
             <h1 className="text-2xl">Productos</h1>
+            <pre>{JSON.stringify(products, null, 2)}</pre>
           </div>
         </SidebarInset>
       </SidebarProvider>
