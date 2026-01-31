@@ -28,16 +28,14 @@ function App() {
   } = useAppLogic();
 
   const bgStatus = {
-    1: "bg-white border-l-4 border-indigo-500 shadow-sm hover:shadow-md",
-    
-    2: "bg-red-50 border-l-4 border-red-500 shadow-sm",
-    3: "bg-emerald-50 border-l-4 border-emerald-500 shadow-sm opacity-75",
+    false: "bg-white border-l-4 border-indigo-500 shadow-sm hover:shadow-md",
+    true: "bg-emerald-50 border-l-4 border-emerald-500 shadow-sm opacity-75",
   };
 
   return (
-    <div className="h-screen bg-gray-100 px-6 py-8 space-y-10">
+    <div className="h-screen bg-gray-100 px-6 py-8 space-y-10 ">
       <h1 className="text-center text-3xl font-bold">TodoList</h1>
-      <form onSubmit={handleFormSubmit}>
+      <form onSubmit={handleFormSubmit} className="max-w-lg mx-auto">
         <div className="bg-white p-5 rounded-lg flex">
           <input
             type="text"
@@ -54,18 +52,18 @@ function App() {
           </button>
         </div>
       </form>
-      <div className="space-y-4">
+      <div className="space-y-4 max-w-lg mx-auto">
         {tasks.map((task) => (
           <div
             key={task.id}
             className={`${
-              bgStatus[task.status]
+              bgStatus[task.completado]
             } p-5 rounded-lg transition-all duration-300 flex flex-col gap-3 group`}
           >
             <div className="flex items-center justify-between">
               <span className="text-xs font-semibold text-gray-500 flex items-center gap-1.5 capitalize">
                 <Calendar size={14} className="stroke-2" />
-                {formatDate(task.createdAt)}
+                {formatDate(`${task.fecha_creacion}Z`)}
               </span>
             </div>
 
@@ -76,7 +74,7 @@ function App() {
                   : "text-gray-800"
               }`}
             >
-              {task.text}
+              {task.titulo}
             </p>
 
             <div className="flex justify-end gap-2 mt-1 border-t border-black/5 pt-3">
@@ -115,7 +113,7 @@ function App() {
           <TriangleAlert className="text-yellow-600" />
           <p>
             Esta seguro de eliminar esta tarea{" "}
-            <strong>{currentTask?.text}</strong>?, es una{" "}
+            <strong>{currentTask?.titulo}</strong>?, es una{" "}
             <strong className="text-red-500">acción irreversible</strong>
           </p>
         </div>
@@ -137,7 +135,7 @@ function App() {
               key={currentTask?.id}
               type="text"
               placeholder="Ej. Comprar leche"
-              defaultValue={currentTask?.text}
+              defaultValue={currentTask?.titulo}
               name="text"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none transition-all"
             />
@@ -151,12 +149,11 @@ function App() {
               <select
                 key={currentTask?.id ? `status-${currentTask.id}` : "status"}
                 name="status"
-                defaultValue={currentTask?.status}
+                defaultValue={String(currentTask?.completado)}
                 className="w-full appearance-none px-4 py-2.5 rounded-lg border border-gray-300 focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10 outline-none transition-all bg-white"
               >
-                <option value="1">Creado</option>
-                <option value="2">Bloqueado</option>
-                <option value="3">Finalizado</option>
+                <option value="false">Creado</option>
+                <option value="true">Finalizado</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-gray-500">
                 <svg
